@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖南师大附中高考倒计时壁纸 使用说明 - Ritel's Website</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <style>
+        p {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        h2 {
+            margin-top: 16px;
+        }
+
+        #back_top {
+            display: block;
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            bottom: 50px;
+            right: 40px;
+            border-radius: 15px 15px 15px 15px;
+            text-decoration: none;
+            display: none;
+            background-color: #999999;
+            z-index: 256;
+        }
+
+            #back_top span {
+                display: block;
+                width: 60px;
+                color: #dddddd;
+                font-size: 40px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 8px;
+                font-family: "微软雅黑";
+            }
+
+                #back_top span:hover {
+                    color: #cccccc;
+                }
+    </style>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <h1>湖南师大附中高考倒计时壁纸 使用说明</h1>
+            <div style="margin-left:32px">
+                <h2>目录</h2>
+                <div style="margin-left:24px">
+                    <p><a href="#What's-this">这是什么？</a></p>
+                    <p><a href="#Dyslexia">阅读之前：扫除阅读障碍</a></p>
+                    <p><a href="#Download">下载该壁纸和 Wallpaper Engine</a></p>
+                    <p><a href="#Use-Wallpaper-Engine">使用 Wallpaper Engine</a></p>
+                    <p><a href="#Setup-SDFZGKCD">设置 SDFZGKCD</a></p>
+                    <p><a href="#About">关于 SDFZGKCD</a></p>
+                    <p><a href="#Advice">博采众议 & 招贤纳士</a></p>
+                </div>
+
+                <h2 id="What's-this">这是什么？</h2>
+                <div style="margin-left:24px">
+                    <p>湖南师大附中高考倒计时壁纸 (SDFZGKCD) - 来自 G2108 李叙廷 (Ritel Takajun)</p>
+                    <p style="margin-left:24px">当前最新版本 v7.2</p>
+                    <a href="preview">
+                        点击在线预览<br />
+                        <img src="preview.png" style="width: 70%" />
+                    </a>
+                    <p>高考的日子一天天逼近，但你却毫无实感？想知道高考到底还有多么遥远？你需要这样一个高考倒计时。</p>
+                    <p>它具有经精心设计的美观页面、精准无误的时钟与倒计时、堪称智能的电子课表、实时更新的天气预报、以及可爱有趣的 Live2D 看板娘，让你在紧张的学业中获得更便捷的体验，以及拥有愉快的心情。</p>
+                    <p>同时，你也不用拘泥于高考倒计时。你可以轻松地将其自定义为任何倒计时。</p>
+                    <p><strong>欢迎下载体验 SDFZGKCD。 ↓</strong></p>
+                    <p><strong>极力欢迎大家在全校范围内广泛推荐和传播。</strong></p>
+                </div>
+
+                <h2 id="Dyslexia">阅读之前：扫除阅读障碍</h2>
+                <div style="margin-left:24px">
+                    <p>在使用者调查时我发现，无论是一窍不通的人，还是有所知晓的人，都可能出现阅读障碍。</p>
+                    <p>这可能是因为我没有足够的精力去在心理学上调整排版使该教程更易读，导致阅读障碍增多。以下是一些减少阅读障碍的建议：</p>
+                    <p>教程的每一步都写得很清楚，请耐心阅读，认清每一句的句意。</p>
+                    <p>不要主观臆断、画蛇添足；不要盲目跳读，即使你有所了解。</p>
+                    <br />
+                    <p>顺利情况下，阅读该教程并完成设置仅需不到 5 分钟。</p>
+                </div>
+
+                <h2 id="Download">下载该壁纸和 Wallpaper Engine</h2>
+                <div style="margin-left:24px">
+                    <p><a href="https://github.com/Little-Down/little-down.github.io/releases">下载链接在此处</a></p>
+
+                    <p><strong>还未拥有</strong> Wallpaper Engine ？在上方链接里下载 wallpaper_engine.zip 即可</p>
+                    <p style="margin-left:16px;">• &nbsp; 如何配置和使用该软件？ 点击前往 <a href="#Use-Wallpaper-Engine">使用 Wallpaper Engine</a></p>
+                    <p><strong>已经拥有</strong>而无需下载 Wallpaper Engine ? 在上方链接里下载 SDFZGKCD.zip 即可</p>
+                    <p style="margin-left:16px;">• &nbsp; 如何个性化设置该壁纸？ 点击前往 <a href="#Setup-SDFZGKCD">设置 SDFZGKCD</a></p>
+
+                    <h4>更新指南</h4>
+                    <div style="margin-left:24px">
+                        <h5>v7.x → v7.2 : </h5>
+                        <p style="margin-left:16px;">文件路径参见 <a href="#Setup-SDFZGKCD">设置 SDFZGKCD</a> 。需要更新"SDFZGKCD.html" "project.json" "sdfzgkcd.js"，并在原 Properties.json 中加上一行“ "background_image": "none", ”（注意逗号）。参见 <a href="#json">设置 SDFZGKCD - 设置JSON</a> 。</p>
+
+                        <h5>v6.x → v7.x : </h5>
+                        <p style="margin-left:16px;">全部文件需要更新，可将原 schedule.json 中课表复制到新 Properties.json ，并删除原 schedule.json 。</p>
+                    </div>
+
+                    <h4>最近更新</h4>
+                    <div style="margin-left:24px">
+                        <h5>v7.2 更新说明：</h5>
+                        <div style="margin-left:24px">
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;"><strong>增加设置背景图片功能</strong>（请使用暗色背景，否则很难看）。</span></p>
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">修复一个小 bug</span></p>
+                        </div>
+
+                        <h5>v7.1 更新说明：</h5>
+                        <div style="margin-left:24px">
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">微调页面布局</span></p>
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">修复一个小 bug</span></p>
+                        </div>
+
+                        <h5><strong>v7.0 重大更新 更新说明：</strong></h5>
+                        <div style="margin-left:24px">
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">大幅优化代码结构</span></p>
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">调整页面布局</span></p>
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">优化分辨率适配</span></p>
+                            <p style="margin-left:16px;">•<span style="margin-left:16px;">增加 Live2D 看板娘 开关</span></p>
+                        </div>
+                    </div>
+                    <br />
+                    <p>由于高考临近，作者学业繁重，今后若有非重大更新恕不另行通知。</p>
+                </div>
+
+                <h2 id="Use-Wallpaper-Engine">使用 Wallpaper Engine</h2>
+                <div style="margin-left:24px">
+                    <p>&nbsp; • &nbsp; 注意：建议在电脑显示设置中将缩放调至100%以获得该壁纸的最佳体验。（对于学校电脑，这也是日常使用的最佳设置。）</p>
+                    <br />
+                    <p>将 wallpaper_engine.zip 下载下来之后，将其<strong>解压并放到</strong>一个合适的位置。我推荐 "D:\Program Files (x86)\"。当然，放在任何你喜欢的地方也可以。如图。</p>
+                    <img src="folder.png" />
+                    <p>一定要放在一个合适的位置。我建议在第一次使用之后就不要再更改它的位置了。</p>
+                    <p>确定好了之后，双击 launcher.exe 运行程序。你可以建立一个 launcher.exe 的快捷方式，放在桌面或其他地方，方便日后使用。</p>
+                    <p>短暂的初始化过后，Wallpaper Engine 启动了。如图。</p>
+                    <img src="init.png" />
+                    <p>其中可能会显示 Default (English)，但这无关紧要，点开下拉菜单，选择 Simplified Chinese (简体中文) 即可。</p>
+                    <p>下面是推荐设置。</p>
+                    <img src="setting1.png" />
+                    <p>LED 效果是没有用的，因为你没有连接支持的彩色灯光；自动启动的 设置高优先级 能让开机时壁纸启动的更快，点不点都可以。</p>
+                    <img src="setting2.png" />
+                    <p>第一次打开浏览壁纸界面可能会卡住？点一下别的软件窗口再点回来就好。</p>
+                    <br />
+                    <p>接下来点击界面右上角的 设置</p>
+                    <img src="setting3.png" style="width: 85%;" />
+                    <p>将下图几项改为“保持运行”。（如果选择暂停，在使用希沃白板的画笔的时候壁纸可能会暂停。）</p>
+                    <img src="setting4.png" />
+                    <br />
+                    <p>一切准备就绪之后，在界面中点击“附中高考倒计时壁纸”就可以启动壁纸了！</p>
+                    <br />
+                    <p>另外，我没有删除官方自带的一些壁纸。你可以通过上方“筛选结果” - 来源 - 取消勾选 ”官方“ 来隐藏它们。</p>
+                    <img src="filter.png" style="width: 85%;" /><br /><br />
+                    <p>你可以双击右下角 Wallpaper Engine 托盘图标打开选择壁纸界面，或者右键并点击“选择壁纸”。</p>
+                    <img src="icon.png" />
+                    <p>注意：因不明原因，第一次设置时开机启动可能不会生效，你可以打开设置取消并重新勾选开机启动，或者点击“设置高优先级”。</p>
+                    <img src="startup.png" style="width: 85%;" />
+                </div>
+
+                <h2 id="Setup-SDFZGKCD">设置 SDFZGKCD</h2>
+                <div style="margin-left:24px">
+                    <p>如果<strong>你还没有</strong>把壁纸导入 Wallpaper Engine（在上面下载的软件里会自带，<strong>请跳过</strong>这一句话），打开软件所在文件夹，依次进入 projects\myprojects 文件夹，将壁纸文件夹放入此文件夹，如图。</p>
+                    <img src="folder1.png" />
+                    <br /> <br />
+                    <p>如果<strong>已经拥有</strong>该壁纸，那么就在软件页面右键单击该壁纸，点击“在资源管理器中打开”（或者找到上图路径也可以）。</p>
+                    <img src="open.png" style="width: 85%;" />
+                    <p>使用记事本打开 Properties.json 。（如果你有其他的编辑器也可以。）</p>
+                    <img src="open2.png" />
+                    <p>该文件内容以及说明如图。</p>
+                    <img id="json" src="json1.png" />
+                    <p>注意：更改属性时，请不要增减其他符号，否则会导致错误。</p>
+                    <p>建议课表里每节课的名称都是两个字，以保持整齐美观。</p>
+                    <p>请保持上下课时间的第一个时间为 00:00，下课时间的最后一个为 24:00，并且不要删减或改变时间的顺序。</p>
+                    <p>请将要设置的背景图片文件放入同一文件夹中，将其文件名（带上后缀）写入 "background_image" 属性，如 "我的壁纸.jpg"。</p>
+                    <p>修改完成后请保存。壁纸将在 8 秒内自动更新你更改的数据。</p>
+                    <br />
+                    <p>&nbsp; • &nbsp; Live2D 看板娘的注意事项：由于网络原因，有时可能会出现加载不出来的情况，可重启壁纸（换成其他壁纸再换回来）以重新加载；在使用触屏点击时，她本身和她旁边的几个按钮可能需要双击才能起作用。</p>
+                    <br />
+                    <h3 style="margin-top:0; margin-bottom:28px;">一切就绪，请尽情享受吧！</h3>
+                </div>
+
+                <h2 id="About">关于 SDFZGKCD</h2>
+                <div style="margin-left:24px">
+                    <p>由 湖南师范大学附属中学 G2108 李叙廷 (Ritel Takajun) 制作</p>
+                    <h4>联系作者</h4>
+                    <div style="margin-left:24px">
+                        <p>QQ: 1356173200</p>
+                        <p>Email: little_down@outlook.com</p>
+                        <p>Github: <a href="https://github.com/little-down">Ritel Takajun</a></p>
+                        <p>Twitter: <a href="https://twitter.com/Ritel_Takajun">@Ritel_Takajun</a></p>
+                        <p>Personal Website: <a href="https://littledown.top:783/">https://littledown.top:783/</a></p>
+                    </div>
+                    <p>使用说明 & 在线预览: <a href="https://littledown.top:783/SDFZGKCD">https://littledown.top:783/SDFZGKCD</a></p>
+                    <br />
+                    <p>除以下引用外，本壁纸由本作者完全自制。</p>
+                    <p>天气插件引用 <a href="https://widget.qweather.com/">和风天气</a>。</p>
+                    <p>Live2D 使用 <a href="https://github.com/fghrsh/live2d_demo">fghrsh/live2d_demo</a> ，本作者进行过二次修改。</p>
+                    <p>壁纸播放工具：<a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine（Steam 版）</a>。请支持正版。</p>
+                    <p>感谢所有为此壁纸的诞生和传播提供过帮助和支持的热心人士！</p>
+                    <br />
+                    <p>湖南师范大学附属中学全体师生 具有本网页/壁纸的 使用权。</p>
+                    <p>其他组织/个人需使用/修改请先联系作者，本作者或许可以给你提供帮助。</p>
+                    <p>注：对 Properties.json 的修改属于使用而非修改。</p>
+                    <p>© 2021 - 2022 保留所有权利。</p>
+                </div>
+
+                <h2 id="Advice">博采众议 & 招贤纳士</h2>
+                <div style="margin-left:24px">
+                    <p>欢迎提出使用问题、功能建议、界面设计建议等各种建议或意见，我将感激不尽！</p>
+                    <p>我们缺乏灵感。我们需要实用的新功能。我们需要赏心悦目的美学设计。你的每一句话都造就改变！</p>
+                    <br />
+                    <p>如果你是有能力者，并且有意为此壁纸的发展贡献力量，请联系我。合作造就进步。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <a id="back_top" href="script:;">
+        <span>↑</span>
+    </a>
+
+    <footer class="border-top footer text-muted" id="footer"></footer>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {  //只要窗口滚动,就触发下面代码
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+                if (scrollt > 200) {  //判断滚动后高度超过200px,就显示
+                    $("#back_top").fadeIn(400); //淡出
+                } else {
+                    $("#back_top").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+                }
+            });
+            $("#back_top").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+                $("html,body").animate({ scrollTop: "0px" }, 200);
+            });
+        });
+    </script>
+
+</body>
+</html>
