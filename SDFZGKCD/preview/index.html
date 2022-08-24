@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<!--
+    **************** Copyright Notice 版权声明 ****************
+    * SDFZGKCD
+        由 湖南师范大学附属中学 G2108 Ritel Takajun 制作
+        使用 1920x1080 分辨率体验最佳（已进行分辨率适配）
+
+        联系作者:
+                QQ: 1356173200
+                Email: little_down@outlook.com
+                Github: https://github.com/little-down
+                Twitter: @Ritel_Takajun
+                Personal Website: https://little-down.github.io/
+        使用说明 & 在线预览: https://little-down.github.io/SDFZGKCD
+
+        除以下引用外，本壁纸由本作者完全自制
+        天气插件引用 和风天气 https://widget.qweather.com/
+        Live 2D 使用 https://github.com/fghrsh/live2d_demo
+            本作者进行过二次修改
+        感谢所有为此壁纸的诞生和传播提供过帮助和支持的热心人士！
+
+        湖南师范大学附属中学全体师生 具有本网页/壁纸的 使用、修改权
+        其他组织/个人需使用/修改请先联系作者，本作者或许可以给你提供帮助
+        注：对 Settings.json 的修改属于使用而非修改。
+        © 2021 - 2022 保留所有权利
+
+        欢迎提出使用问题、功能建议、界面设计建议等各种建议或意见，我将感激不尽！
+        我们缺乏灵感。我们需要实用的新功能。我们需要赏心悦目的美学设计。你的每一句话都造就改变！
+
+        如果你是有能力者，并且有意为此壁纸的发展贡献力量，请联系我。合作造就进步。
+
+        请勿删除此声明和.copyright  Do Not Remove this or .copyright
+    **********************************************************
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>湖南师大附中高考倒计时</title>
+    <link rel="stylesheet" type="text/css" href="live2d/waifu.css">
+    <script src="dep/jquery.min.js"></script>
+    <script src="dep/jquery-ui.min.js"></script>
+</head>
+<body style="position: absolute; right: 0; left: 0; top: 0; bottom: 0; margin: 0; padding: 0; background-color: #282828; font-size: 40px;">
+    <style>
+        .nowhead {
+            position: absolute;
+            left: 10.42%;
+            top: 32.41%;
+            font-family: '等线 Light', '微软雅黑 Light', Arial, sans-serif;
+            font-size: 100%;
+            font-weight: 400;
+            color: #99ffff;
+            text-shadow: 0px 0px 32px #00ccff;
+        }
+
+        .now {
+            position: absolute;
+            left: 14.06%;
+            top: 36.85%;
+            font-family: '微软雅黑', '等线', Arial, sans-serif;
+            font-size: 150%;
+            color: white;
+            text-shadow: 0px 0px 32px white;
+        }
+
+        .nowtext {
+            margin: 4px 7px 2px 4px;
+            font-size: 53.33%;
+            color: #99ffff;
+            text-shadow: 0px 0px 16px #00ccff;
+        }
+
+        .lefthead {
+            position: absolute;
+            left: 10.42%;
+            top: 48.5%;
+            font-family: '楷体', '微软雅黑 Light', Arial, sans-serif;
+            font-weight: 500;
+            color: white;
+            text-shadow: 0px 0px 30px #33ccff;
+        }
+
+        .left {
+            position: absolute;
+            left: 14.06%;
+            top: 58%;
+            line-height: 1;
+            font-family: '微软雅黑 Light', '等线 Light', Arial, sans-serif;
+            color: white;
+        }
+
+        .week {
+            position: absolute;
+            left: 85%;
+            top: 9.5%;
+            font-size: 150%;
+            line-height: 1.25;
+            font-family: '楷体', '微软雅黑 Light', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 16px #93ffff;
+        }
+
+        .weeklang {
+            position: absolute;
+            left: 92.2%;
+            top: 10.25%;
+            font-size: 48%;
+            line-height: 1.6;
+            font-family: '等线', '微软雅黑 Light', Arial, sans-serif;
+            color: #ddd;
+            white-space: nowrap;
+        }
+
+        .weather {
+            position: absolute;
+            left: 65%;
+            top: 11.11%;
+        }
+
+        .copyright {
+            position: fixed;
+            left: 2px;
+            bottom: 3.89%;
+            z-index: 63;
+            font-size: 40%;
+            font-family: '微软雅黑', '等线', Arial, sans-serif;
+            font-weight: 400;
+            color: #888;
+        }
+    </style>
+
+    <img id="bg" src="none" style="position: fixed; width: 100%; height: 100%; object-fit: cover;" onerror="this.style.visibility='hidden'" />
+
+    <img id="img" src="dep/hnsdfz.png" alt="hnsdfz" style="position: absolute; top: 8.33%; left: 5.5%; height: 20.4%; filter: drop-shadow(0px 0px 40px #0072ff);" />
+
+    <div class="nowhead">现在是</div>
+    <div class="now"><span id="year">year</span><span class="nowtext">年</span><span id="month">month</span><span class="nowtext">月</span><span id="day">day</span><span class="nowtext">日&nbsp;&nbsp;&nbsp;</span><span id="hour">hour</span><span class="nowtext"> : </span><span id="minute">minute</span><span class="nowtext"> : </span><span id="second">second</span></div>
+
+    <div class="lefthead">
+        <span style="font-size:210%;">距离</span>
+        <span id="yeardest" style="color: #99ffff; font-size: 255%; text-shadow: 0px 0px 40px #00ccff;">yeardest</span>
+        <span id="describe" style="font-size:210%;">DESCRIBE</span>
+    </div>
+
+    <p class="left">
+        <span style="font-size: 600%; text-shadow: 0px 0px 60px #ffffff; " id="dayleft">dayleft</span>
+        <span style="font-size: 120%; color: #99ffff; text-shadow: 0 0 30px #00ccff; ">天 </span>
+        <span style="font-size: 400%; text-shadow: 0px 0px 50px #ffffff; " id="hourleft">hourleft</span>
+        <span style="font-size: 120%; color: #99ffff; text-shadow: 0 0 30px #00ccff; ">时 </span>
+        <span style="font-size: 150%; text-shadow: 0px 0px 30px #ffffff; " id="minuteleft">minuteleft</span>
+        <span style="font-size: 60%; color: #99ffff; text-shadow: 0 0 16px #00ccff; ">分</span>
+        <span style="font-size: 150%; text-shadow: 0px 0px 30px #ffffff; " id="secondleft">secondleft</span>
+        <span style="font-size: 60%; color: #99ffff; text-shadow: 0 0 16px #00ccff; ">秒</span>
+    </p>
+
+    <div class="week">
+        <span id="week">week</span> <br />
+        <span style="display:block; font-size:30.2%;">&nbsp;</span>
+        <span id="cls0">cls0</span> <br />
+        <span id="cls1">cls1</span> <br />
+        <span id="cls2">cls2</span> <br />
+        <span id="cls3">cls3</span> <br />
+        <span id="cls4">cls4</span> <br />
+        <span style="display:block; font-size:17%;">&nbsp;</span>
+        <span id="cls5">cls5</span> <br />
+        <span id="cls6">cls6</span> <br />
+        <span id="cls7">cls7</span> <br />
+        <span id="cls8">cls8</span>
+    </div>
+
+    <div id="weekline" style="position: absolute; left: 91.7%; top:11.1%; width:2px; height: 4%; background-color: #666;"></div>
+
+    <div class="weeklang">
+        <span id="weeken">weeken</span> <br />
+        <span id="weekjp">weekjp</span>
+    </div>
+
+    <div id="line" style="position: absolute; left: 91.7%; top:-8%; width:2px; height: 4%; background-color: #666;"></div>
+
+    <div class="weather" id="weather">
+        <div id="he-plugin-standard"></div>
+        <script>
+            WIDGET = {
+                "CONFIG": {
+                    "layout": "2",
+                    "width": 270,
+                    "height": 340,
+                    "background": "1",
+                    "dataColor": "FFFFFF",
+                    "language": "zh",
+                    "borderRadius": "10",
+                    "city": "CN101250109",
+                    "key": "9d6f30629ca641e9bf25d1cd628dfe00"
+                }
+            }
+        </script>
+        <script async src="https://widget.qweather.net/standard/static/js/he-standard-common.js"></script>
+    </div>
+
+    <script src="live2d/autoload.js"></script>
+
+    <script src="dep/sdfzgkcd.js"></script>
+
+    <div class="copyright">SDFZGKCD v7.3 - Designed by HNSDFZ G2108 Ritel Takajun</div>
+</body>
+</html>
